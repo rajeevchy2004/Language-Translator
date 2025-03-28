@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Multi-Language Translator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Multi-Language Translator</h1>
+        
+        <div class="language-selection">
+            <div class="language-box">
+                <h3>Source Language</h3>
+                <select id="sourceLanguage">
+                    <option value="hi">Hindi</option>
+                    <option value="en">English</option>
+                    <option value="or">Odia</option>
+                    <option value="bn">Bengali</option>
+                    <option value="te">Telugu</option>
+                    <option value="ta">Tamil</option>
+                    <option value="mr">Marathi</option>
+                    <option value="gu">Gujarati</option>
+                    <option value="kn">Kannada</option>
+                    <option value="ml">Malayalam</option>
+                    <option value="pa">Punjabi</option>
+                </select>
+            </div>
+            
+            <div class="language-box">
+                <h3>Target Language</h3>
+                <select id="targetLanguage">
+                    <option value="en">English</option>
+                    <option value="hi">Hindi</option>
+                    <option value="or">Odia</option>
+                    <option value="bn">Bengali</option>
+                    <option value="te">Telugu</option>
+                    <option value="ta">Tamil</option>
+                    <option value="mr">Marathi</option>
+                    <option value="gu">Gujarati</option>
+                    <option value="kn">Kannada</option>
+                    <option value="ml">Malayalam</option>
+                    <option value="pa">Punjabi</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="input-container">
+            <button class="text-btn" id="textBtn">Text</button>
+            <button class="voice-btn" id="voiceBtn">Voice</button>
+        </div>
+        
+        <textarea id="inputText" placeholder="Enter text here or click voice button to speak..."></textarea>
+        
+        <button class="clear-btn" id="clearBtn">Clear Text</button>
+        
+        <button class="translate-btn" id="translateBtn">Translate</button>
+        
+        <div class="output-container">
+            <h3>Translated Text</h3>
+            <textarea id="outputText" readonly></textarea>
+        </div>
+        
+        <p class="status" id="status">Ready to translate</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
